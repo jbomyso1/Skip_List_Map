@@ -1,10 +1,10 @@
-all: map
+all: main
 
-map: map.o
-		g++ -std=c++11 -g map.o -o map
+main: main.o
+		g++ -std=c++14 -g main.o -o main
 
-map.o: map.hpp map.cpp
-		g++ -std=c++11 -g -c map.cpp
+main.o: map.hpp main.cpp
+		g++ -std=c++14 -g -c main.cpp
 
 clean:
-		rm *.o *~ map
+		rm *.o *~ main
